@@ -99,6 +99,11 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <plugin>
+        				<groupId>org.codehaus.cargo</groupId>
+        				<artifactId>cargo-maven2-plugin</artifactId>
+        				<version>1.5.1-SNAPSHOT</version>
+        			</plugin>
                 </plugins>
             </build>
         </profile>
@@ -123,6 +128,11 @@
             <artifactId>gameoflife-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+    		<groupId>org.codehaus.cargo</groupId>
+    		<artifactId>cargo-maven2-plugin</artifactId>
+    		<version>1.5.0</version>
+		</dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
