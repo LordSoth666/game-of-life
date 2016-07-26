@@ -79,6 +79,17 @@
             <id>performance</id>
             <build>
                 <plugins>
+                	<plugin>
+                		<groupId>org.codehaus.mojo</groupId>
+                		<artifactId>cobertura-maven-plugin</artifactId>
+                		<version>2.5.1</version>
+                		<configuration>
+                			<formats>
+                				<format>html</format>
+                				<format>xml</format>
+                			</formats>
+                		</configuration>
+                	</plugin>
                     <plugin>
                         <artifactId>maven-antrun-plugin</artifactId>
                         <version>1.4</version>
@@ -174,11 +185,11 @@
             <artifactId>fest-assert</artifactId>
             <version>1.4</version>
         </dependency>
-        <dependency>
+<!--    <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.6.1</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
